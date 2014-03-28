@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark">
+	<s:layout>
+		<s:VerticalLayout/>
+	</s:layout>
+	<s:ActionBar width="100%" title="Topline">
+		<s:actionContent>
+			<s:Button label="Go Back" />
+			<s:Button label="Go Front" />
+		</s:actionContent>
+	</s:ActionBar>
+	<s:Group width="100%" >
+		<s:Button label="Hello" left="100" />
+	</s:Group>
+	<s:Group width="100%" >
+		<s:CheckBox label="Check me!" />
+	</s:Group>
+	<s:VGroup width="100%" height="100">
+		<s:RadioButton label="Radio" groupName="mygroup" />
+		<s:RadioButton label="Television" groupName="mygroup" />
+	</s:VGroup>
+</s:Group>

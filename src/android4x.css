@@ -1,0 +1,195 @@
+/* CSS file */
+@namespace s "library://ns.adobe.com/flex/spark";
+
+@namespace "library://ns.adobe.com/flex/spark";
+
+/*Roboto Fonts*/
+@font-face {
+	src: url("/spark/skins/android4/assets/fonts/Roboto-Regular.ttf");
+	fontFamily: RobotoRegular;
+	embed-as-cff: false;
+}
+
+@font-face {
+	src: url("/spark/skins/android4/assets/fonts/Roboto-Bold.ttf");
+	fontFamily: RobotoBold;
+	fontWeight: bold;
+	embed-as-cff: false;
+}
+
+global
+{
+	fontFamily: RobotoBold;
+	fontSize: 24;
+	color: #000000;
+	textShadowColor: #FFFFFF;
+	textShadowAlpha: 0;
+}
+
+ActionBar
+{
+	chromeColor: #DEDEDD;
+	defaultButtonAppearance: normal;
+	skinClass: ClassReference("spark.skins.android4.ActionBarSkin");
+	textShadowAlpha: 0;
+	textShadowColor: #000000;
+	paddingBottom: 1;
+	paddingLeft: 0;
+	paddingRight: 0;
+	paddingTop: 1;
+}
+
+ActionBar #titleDisplay
+{
+	color: #333333;
+	fontSize: 24;
+	fontFamily: RobotoBold;
+}
+
+ActionBar ButtonBase
+{
+	color: #333333;
+}
+
+ActionBar Group#actionGroup Button
+{
+	skinClass: ClassReference("spark.skins.android4.TransparentActionButtonSkin");
+}
+
+Button
+{
+	fontWeight: "bold";
+	skinClass: ClassReference("spark.skins.android4.ButtonSkin");
+}
+
+Button.emphasized
+{
+	skinClass: ClassReference("spark.skins.mobile.DefaultButtonSkin");
+}
+
+CheckBox
+{
+	skinClass: ClassReference("spark.skins.android4.CheckBoxSkin");
+	chromeColor: #FFFFFF;
+	fontFamily: RobotoRegular;
+	fontWeight: "normal";
+}
+
+@media (application-dpi: 120)
+{
+	global
+	{
+		fontSize: 12;
+		focusThickness: 2;
+	}
+	
+	ActionBar.beveled
+	{
+		paddingLeft: 4;
+		paddingRight: 4;
+	}
+	
+	ActionBar #titleDisplay
+	{
+		fontSize: 14;
+	}
+}
+
+@media (application-dpi: 160)
+{
+	global
+	{
+		fontSize: 16;
+		focusThickness: 2;
+	}
+	
+	ActionBar
+	{
+		paddingBottom: 1;
+		paddingLeft: 0;
+		paddingRight: 0;
+		paddingTop: 1;
+	}
+	
+	ActionBar #titleDisplay
+	{
+		fontSize: 18;
+	}
+}
+
+@media (application-dpi: 240)
+{
+	global
+	{
+		fontSize: 20;
+	}
+	
+	ActionBar #titleDisplay
+	{
+		fontSize: 24;
+	}
+}
+
+@media (application-dpi: 320)
+{
+	global
+	{
+		fontSize: 32;
+	}
+	
+	ActionBar
+	{
+		paddingBottom: 2;
+		paddingLeft: 0;
+		paddingRight: 0;
+		paddingTop: 2;
+	}
+	
+	ActionBar #titleDisplay
+	{
+		fontSize: 36;
+	}
+}
+
+@media (application-dpi: 480)
+{
+	global
+	{
+		fontSize: 48;
+		focusThickness: 6;
+	}
+	
+	ActionBar
+	{
+		paddingBottom: 4;
+		paddingLeft: 0;
+		paddingRight: 0;
+		paddingTop: 4;
+	}
+	
+	ActionBar #titleDisplay
+	{
+		fontSize: 54;
+	}
+}
+
+@media (application-dpi: 640)
+{
+	global
+	{
+		fontSize: 64;
+	}
+	
+	ActionBar
+	{
+		paddingBottom: 4;
+		paddingLeft: 0;
+		paddingRight: 0;
+		paddingTop: 4;
+	}
+	
+	ActionBar #titleDisplay
+	{
+		fontSize: 72;
+	}
+}
