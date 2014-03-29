@@ -1,6 +1,4 @@
 /* CSS file */
-@namespace s "library://ns.adobe.com/flex/spark";
-
 @namespace "library://ns.adobe.com/flex/spark";
 
 /*Roboto Fonts*/
@@ -19,7 +17,8 @@
 
 global
 {
-	fontFamily: RobotoBold;
+	fontFamily: RobotoRegular;
+	fontWeight: "normal";
 	fontSize: 24;
 	color: #000000;
 	textShadowColor: #FFFFFF;
@@ -49,6 +48,8 @@ ActionBar #titleDisplay
 ActionBar ButtonBase
 {
 	color: #333333;
+	fontFamily: RobotoBold;
+	fontWeight: bold;
 }
 
 ActionBar Group#actionGroup Button
@@ -58,6 +59,7 @@ ActionBar Group#actionGroup Button
 
 Button
 {
+	fontFamily: RobotoBold;
 	fontWeight: "bold";
 	skinClass: ClassReference("spark.skins.android4.ButtonSkin");
 }
@@ -71,8 +73,12 @@ CheckBox
 {
 	skinClass: ClassReference("spark.skins.android4.CheckBoxSkin");
 	chromeColor: #FFFFFF;
-	fontFamily: RobotoRegular;
-	fontWeight: "normal";
+}
+
+RadioButton
+{
+	skinClass: ClassReference("spark.skins.android4.RadioButtonSkin");
+	chromeColor: #FFFFFF;
 }
 
 @media (application-dpi: 120)
